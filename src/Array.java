@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Array {
     public static void main(String[] args) {
 
@@ -17,11 +19,15 @@ public class Array {
        {
            System.out.println(anArray[i]);
        }
+       Scanner scanner = new Scanner(System.in);
+       System.out.println("Please enter value of array: ");
+       int newvalue = scanner.nextInt();
+try
+{anArray[10] = newvalue; System.out.println("" +anArray[10]);}
+catch ( Exception e)
+{
+System.out.println("Something went wrong");
 
-
-
-
-
-
+}
     }
 }
